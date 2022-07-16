@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color1:#D8d8d8;
+    --color2:#fff;
+    --color3:#333;
+}
+
+@font-face {
+    font-family: 'SFNSDisplay';
+    src: url(../CSS/otf/SFNSDisplay-Regular.otf);
+}
+
+body{
+    font-size: 62.5%;
+    font-family: 'SFNSDisplay';
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color:var(--color3);
+}
+
+nav, ul, li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .25rem 1.3rem .25rem 1.3rem;
+    font-size: .8rem;
+    list-style: none;
+}   
+
+.logo{
+    color: var(--color1);
+    font-size: 1.3rem;
+    transition: .5s;
+}
+
+.logo:hover{
+    color: var(--color2);
+}
+
+a{
+    text-decoration: none;
+    color: var(--color1);
+    transition: .5s;
+}
+
+a:hover{
+    color: var(--color2);
+}
+
