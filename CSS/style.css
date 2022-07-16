@@ -8,6 +8,8 @@
     --color1:#D8d8d8;
     --color2:#fff;
     --color3:#333;
+    --color4: #F5F5F7;
+    --colorlinks: #277DD4;
 }
 
 @font-face {
@@ -45,13 +47,41 @@ nav, ul, li{
     color: var(--color2);
 }
 
-a{
+li a{
     text-decoration: none;
     color: var(--color1);
     transition: .5s;
 }
 
-a:hover{
+li a:hover{
     color: var(--color2);
 }
 
+.unicef{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    width: 100%;
+    background-color: var(--color4);
+}
+
+.unicef-logo img{
+    max-width: 9%;
+    margin-right: 1rem;
+}
+
+.unicef-logo{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+.unicef-logo a{
+    font-size: .9rem;
+    color: var(--colorlinks);
+    text-decoration: none;
+}
+
+.unicef-logo a:hover{
+    text-decoration: underline;
+}
